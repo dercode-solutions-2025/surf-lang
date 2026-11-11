@@ -1,12 +1,11 @@
 class Animal {
-    let name := "Rover";
-    pub fn sayName() {
-        println(name, "says hello!");
+    pub fn sayName(str name) {
+        println(name + "says hello!");
     }
 }
 
 pub class Main : Animal {
     pub fn main(argv) {
-        println(sayName());
+        println(sayName("Brownie"));
     }
 }
