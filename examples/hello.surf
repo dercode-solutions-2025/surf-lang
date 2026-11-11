@@ -1,4 +1,4 @@
-pub class Hello {
+pub class hello {
     pub fn main(argv) {
         println("Hello World!");
     }
