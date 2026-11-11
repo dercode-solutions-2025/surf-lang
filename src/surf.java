@@ -5,6 +5,7 @@ Welcome to Surf v0.1! Surf, released under the GNU AGPL v3.0 license, compiles t
 2026 Surf. All rights reserved.
 
 */
+package surf;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -337,21 +338,4 @@ class Parser {
 		}
 		return out;
 	}
-}
-public class surf {
-    public static void main(String[] args) {
-        if (args.length == 0) {
-            System.err.println("Usage: java surf.java <file.surf>");
-            System.exit(1);
-        }
-        try {
-            String surfCode = java.nio.file.Files.readString(java.nio.file.Path.of(args[0]));
-            String javaCode = Parser.compileJava(Lexer.lex(surfCode));
-            java.nio.file.Files.writeString(java.nio.file.Path.of("Main.java"), javaCode);
-            System.out.println("Transpiled successfully to Surf_Main.java");
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(1);
-        }
-    }
 }
