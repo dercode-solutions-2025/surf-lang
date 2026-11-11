@@ -1,0 +1,5 @@
+pub class Hello {
+    pub fn main(argv) {
+        println("Hello World!");
+    }
+}
