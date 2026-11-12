@@ -1,4 +1,4 @@
-/* 
+/*
 
 Welcome to Surf 0.2.2! Surf, released under the GNU AGPL v3.0 license, compiles to basic Java scripts. It was designed as an easier way to use Java.
 
@@ -43,7 +43,6 @@ enum Token {
     COLON,
     SEMI,
     PERIOD,
-    DEFINE,
     LET
 }
 
@@ -369,7 +368,7 @@ public class Main extends std{
 			Path path = Path.of(args[0]);
 			if (!Files.exists(path)) {
 				System.out.println("File " + path + "doesn't exist! Exiting with error code 1.");
-			System.exit(1);
+				System.exit(1);
 			}
         	try {
 				Path filePath = Path.of(getSurfFileName(args[0]) + ".java");
