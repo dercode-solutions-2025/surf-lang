@@ -368,8 +368,8 @@ public class Main extends std{
     	} else {
 			Path path = Path.of(args[0]);
 			if (!Files.exists(path)) {
-				System.out.println("File " + path + " doesn't exist.\nThis example should be saved before running.");
-				return;
+				System.out.println("File " + path + "doesn't exist! Exiting with error code 1.");
+			System.exit(1);
 			}
         	try {
 				Path filePath = Path.of(getSurfFileName(args[0]) + ".java");
