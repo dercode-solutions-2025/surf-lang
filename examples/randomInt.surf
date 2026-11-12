@@ -1,0 +1,6 @@
+pub class Main {
+    pub fn main(argv) {
+        let seed = 1000;
+        println(std.randomNumber(seed));
+    }
+}
