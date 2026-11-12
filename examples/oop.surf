@@ -1,6 +1,6 @@
 class Animal {
     pub fn sayName(str name) {
-        println(name + "says hello!");
+        println(name + " says hello!");
     }
 }
 
