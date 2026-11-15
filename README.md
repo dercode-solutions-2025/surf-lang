@@ -8,9 +8,9 @@ Let's say you have a program.surf, here is how to compile and run it:
 ```Shell
 javac surf.java
 java surf program.surf
-javac program.java
-java program
 ```
+It is that easy! With version 1.3.2, it now executes and deletes the compiled Java for you!
+
 This also works for any .surf script, it just writes to a .java file based on the input file.
 
 Additionally, it does not delete the outputted Java, so you can inspect it anytime.
