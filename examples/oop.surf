@@ -1,11 +1,10 @@
-class Animal {
-    pub fn sayName(str name) {
-        println(name + " says hello!");
-    }
-}
-
 pub class oop : Animal {
     pub fn main(argv) {
         println(sayName("Brownie"));
+    }
+}
+class Animal {
+    pub fn sayName(str name) {
+        println(name + " says hello!");
     }
 }
